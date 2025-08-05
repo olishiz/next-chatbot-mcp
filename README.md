@@ -2,6 +2,51 @@
 Testing Next chatbot powered by MCP
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## MCP Inspector Setup
+
+The Model Context Protocol (MCP) Inspector helps you debug and monitor your chatbot's interactions. Here's how to set it up for local development:
+
+### Prerequisites
+- Node.js 16.8 or later
+- Running instance of your Next.js application
+
+### Installation
+
+1. First, install the MCP Inspector package:
+
+```bash
+npm install @modelcontextprotocol/inspector
+```
+
+### Usage
+
+1. Start your Next.js development server if it's not already running:
+
+```bash
+npm run dev
+```
+
+2. In a new terminal, start the MCP Inspector:
+
+```bash
+npx @modelcontextprotocol/inspector
+```
+
+3. The MCP Inspector will automatically connect to your local Next.js application at `http://localhost:3000`.
+
+4. Open the MCP Inspector in your browser at [http://localhost:3000/__mcp__](http://localhost:3000/__mcp__)
+
+### Features
+- Real-time monitoring of model interactions
+- Request/response inspection
+- Conversation history
+- Model performance metrics
+
+### Troubleshooting
+- Ensure your Next.js app is running before starting the inspector
+- If the inspector doesn't connect automatically, verify your app's URL in the inspector settings
+- Check the console for any error messages
+
 ## Getting Started
 
 First, run the development server:

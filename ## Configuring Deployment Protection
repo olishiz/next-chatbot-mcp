@@ -1,0 +1,23 @@
+## Configuring Deployment Protection
+Configuring Deployment Protection
+Deployment Protection is managed through your project settings. To configure Deployment Protection:
+1. From the [dashboard](https://vercel.com/dashboard), select the project you wish to set Deployment Protection on
+2. Once selected, navigate to the Settings tab
+3. From the list, select the Deployment Protection tab
+[dashboard](https://vercel.com/dashboard)
+
+## Understanding Deployment Protection by environment
+Understanding Deployment Protection by environment
+You can configure the type of Deployment Protection for each environment in your project depending on your projects security needs. When choosing your protection method, you can select from three options:
+- Standard Protection: This option protects all domains except [Production Custom Domains](https://vercel.com/docs/domains/working-with-domains/add-a-domain). Standard Protection is available on all plans
+- All Deployments: Protects all URLs. Protecting all deployments is available on Pro and Enterprise plans
+- (Legacy) Standard Protection: This option protects all preview URLs and deployment URLs. All [up to date production URLs](https://vercel.com/docs/deployments/generated-urls) are unprotected.
+- (Legacy) Only Preview Deployments: This option protects only preview URLs. This does not protect past production deployments.
+Standard Protection
+[Production Custom Domains](https://vercel.com/docs/domains/working-with-domains/add-a-domain)
+All Deployments
+(Legacy) Standard Protection
+[deployment URLs](https://vercel.com/docs/deployments/generated-urls)
+[up to date production URLs](https://vercel.com/docs/deployments/generated-urls)
+(Legacy) Only Preview Deployments
+To protect only production URLs, you can use [Trusted IPs](https://vercel.com/docs/security/deployment-protection/methods-to-protect-deployments/trusted-ips). Note that this option is only available on the Enterprise plan.
